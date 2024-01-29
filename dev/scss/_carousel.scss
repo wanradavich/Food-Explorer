@@ -1,0 +1,111 @@
+// Import Bootstrap (if needed)
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+// Import Slick styles
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css');
+
+// Your custom styles for the slider
+.slideshow {
+  position: relative;
+
+  .slideset {
+    position: relative;
+
+    .slide {
+      position: relative;
+      width: 100%;
+
+      .img-holder {
+        .img-frame {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .caption-holder {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 20px;
+
+        h1 {
+          font-size: 36px;
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+
+        .btn-list {
+          margin-top: 20px;
+          li {
+            display: inline-block;
+            margin-right: 15px;
+
+            a {
+              color: #fff;
+              background: none;
+              padding: 12px 20px;
+              text-decoration: none;
+              display: inline-block;
+              font-weight: 700;
+              border: 1px solid white;
+              transition: 0.5s ease;
+
+              &:hover {
+                color: rgba(36, 73, 99, 1);
+                background: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .paging {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+
+    .pagination {
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background 0.3s ease;
+
+            &:hover {
+              background: #fff;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media query for Tablets
+@media screen and (min-width: 768px) {
+}
+
+ // Media query for Desktops
+ @media screen and (min-width: 1024px) {
+ }

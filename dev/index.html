@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+	<!-- Link to Bootstrap CSS (adjust the version as needed) -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <!-- end Google Fonts -->
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
@@ -20,7 +25,6 @@
   </head>
   <body>
     <!-- Put your HTML code here... -->
-    <h1>Our Project</h1>
     <div id="body-wrapper" class="body-wrapper">
       <!-- Header Code -->
       <header id="header">
@@ -35,7 +39,7 @@
           <div class="slide">
             <div class="img-holder">
               <div class="img-frame">
-                <img />
+                <img src="images/header-slider-img-01.jpg" alt="Image 1"/>
               </div>
             </div>
             <div class="caption-holder">
@@ -43,7 +47,9 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
-                      <h1>We Design</h1>
+                      <h1>We Design and Fabricate Indestructible Wastewater
+						Screens. Enough Said.
+					  </h1>
                       <ul class="btn-list">
                         <li>
                           <a href="#">VIEW PRODUCTS</a>
@@ -61,7 +67,7 @@
           <div class="slide">
             <div class="img-holder">
               <div class="img-frame">
-                <img />
+                <img src="images/header-slider-img-02.jpg" alt="Image 2"/>
               </div>
             </div>
             <div class="caption-holder">
@@ -69,7 +75,9 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
-                      <h1>We Design</h1>
+                      <h1>We Design and Fabricate Indestructible Wastewater
+						Screens. Enough Said.
+					  </h1>
                       <ul class="btn-list">
                         <li>
                           <a href="#">VIEW PRODUCTS</a>
@@ -87,7 +95,7 @@
           <div class="slide">
             <div class="img-holder">
               <div class="img-frame">
-                <img />
+                <img src="images/header-slider-img-03.jpg" alt="Image 3"/>
               </div>
             </div>
             <div class="caption-holder">
@@ -95,7 +103,9 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-10 col-lg-offset-1">
-                      <h1>We Design</h1>
+                      <h1>We Design and Fabricate Indestructible Wastewater
+						Screens. Enough Said.
+					  </h1>
                       <ul class="btn-list">
                         <li>
                           <a href="#">VIEW PRODUCTS</a>
@@ -132,7 +142,7 @@
 
       <!-- Order Block Code -->
       <div class="order-block">
-        <div class="container">
+        <div class="container order-block-container">
           <div id="order-block-header">
             <h2 id="order-block-title">CUSTOMIZED PER ORDER</h2>
             <p id="order-block-desc">
@@ -254,7 +264,10 @@
     </div>
 
     <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-    <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="scripts/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<!-- Link to Bootstrap JS (adjust the version as needed) -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <script src="scripts/script.min.js?cachebuster=1"></script>
     <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->

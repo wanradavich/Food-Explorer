@@ -1,17 +1,35 @@
 // Place your Sass imports here...
 
+@use "carousel";
+
+*,
+:after,
+:before,
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
+  min-width: 320px;
   font-family: "Roboto Condensed", sans-serif;
   background-color: rgba(36, 73, 99, 1);
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* order-customization */
@@ -72,7 +90,7 @@ a {
   line-height: 20px;
 }
 
-.container {
+.order-block-container {
   padding-top: 33px;
   padding-bottom: 77px;
   display: flex;
@@ -145,10 +163,10 @@ a {
 
 .advisor-line {
   height: 1px;
-  width: 100%;
+  width: calc(100% - 20px);
   border: none;
   border-top: 1px solid white;
-  margin: 10px;
+  margin: 0 auto;
 }
 
 #advisor-btn {
