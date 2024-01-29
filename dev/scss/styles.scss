@@ -1,2 +1,200 @@
 // Place your Sass imports here...
 
+@use "carousel";
+
+*,
+:after,
+:before,
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgba(36, 73, 99, 1);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* order-customization */
+.order-block {
+  position: relative;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#order-block-title,
+.machine-container {
+  color: rgba(85, 85, 97, 1);
+}
+
+#order-block-title {
+  max-width: 130px;
+  padding-bottom: 0;
+  margin: 0 0 7px;
+  z-index: 11;
+  font-size: 18px;
+}
+
+#order-block-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 32px 0 32px;
+}
+
+.machine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.machine-container > img {
+  height: auto;
+  max-width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.machine-container > h3 {
+  font-size: 13px;
+  margin-left: 10px;
+  max-width: 80px;
+}
+
+#order-block-desc {
+  color: rgba(85, 86, 94, 1);
+  font-size: 13.5px;
+  padding: 0;
+  margin: 0;
+  max-width: 250px;
+  line-height: 20px;
+}
+
+.order-block-container {
+  padding-top: 33px;
+  padding-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+}
+
+.order-block::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -62px;
+  right: 0;
+  z-index: 10;
+  height: 166px;
+  background-size: 160% 80%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-white.png");
+}
+
+.order-line {
+  height: 1px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(206, 206, 206, 1);
+}
+
+/* product advisor */
+#advisor-block-header {
+  color: white;
+  text-align: center;
+}
+
+#advisor-title {
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#advisor-desc {
+  font-size: 12px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(36, 73, 99, 1);
+}
+
+.select-container label {
+  color: white;
+  font-size: 12px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.select-container select {
+  height: 35px;
+}
+
+/* select > option {
+    color: rgba(135, 135, 137, 1);
+    background-color: rgba(187, 187, 187, 1);
+  } */
+
+.advisor-line {
+  height: 1px;
+  width: calc(100% - 20px);
+  border: none;
+  border-top: 1px solid white;
+  margin: 0 auto;
+}
+
+#advisor-btn {
+  background-color: rgba(66, 155, 214, 1);
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#advisor-btn > a {
+  color: white;
+}
+
+.advisor-block::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -62px;
+  right: 0;
+  z-index: 10;
+  height: 166px;
+  background-size: 160% 80%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-blue-dark.png");
+}
+
+#advisor-container {
+  z-index: 100;
+  position: relative;
+}

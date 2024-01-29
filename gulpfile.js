@@ -29,7 +29,7 @@ let buildMode = false;
 // This variable is used to determine if the
 // jQuery library is being used or not.
 // Set to true if you need the jQuery library in your project
-const useJQuery = false;
+const useJQuery = true;
 
 // File Names
 const filenames = {};
