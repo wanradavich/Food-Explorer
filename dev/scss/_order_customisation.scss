@@ -280,4 +280,27 @@ select {
   .machine-link {
     margin-top: 20px;
   }
+
+  .select-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .select-row:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select-container {
+    min-width: 205px;
+  }
+
+  .select-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(21, 74, 102, 1);
+  }
 }
