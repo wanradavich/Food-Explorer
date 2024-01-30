@@ -1,0 +1,269 @@
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* order-customization */
+.order-block {
+  position: relative;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#order-block-title,
+.machine-container {
+  color: rgba(85, 85, 97, 1);
+}
+
+#order-block-title {
+  max-width: 130px;
+  padding-bottom: 0;
+  margin: 0 0 7px;
+  z-index: 11;
+  font-size: 18px;
+}
+
+#order-block-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 32px 0 32px;
+}
+
+.machine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.machine-container > img {
+  height: auto;
+  max-width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.machine-container > h3 {
+  font-size: 13px;
+  margin-left: 10px;
+  max-width: 80px;
+}
+
+.machine-link {
+  display: none;
+}
+
+#order-block-desc {
+  color: rgba(85, 86, 94, 1);
+  font-size: 13.5px;
+  padding: 0;
+  margin: 0;
+  max-width: 250px;
+  line-height: 20px;
+}
+
+.order-block-container {
+  padding-top: 33px;
+  padding-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+}
+
+.order-block::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -62px;
+  right: 0;
+  z-index: 10;
+  height: 166px;
+  background-size: 160% 80%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-white.png");
+}
+
+.order-line {
+  height: 1px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(206, 206, 206, 1);
+}
+
+/* product advisor */
+#advisor-block-header {
+  color: white;
+  text-align: center;
+}
+
+#advisor-title {
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#advisor-desc {
+  font-size: 12px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(21, 74, 102, 1);
+}
+
+.select-container label {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.select-container select {
+  height: 35px;
+  background-color: rgba(187, 187, 187, 1);
+  color: rgba(123, 123, 123, 1);
+  font-size: 12px;
+}
+
+.select-container select:focus {
+  background-color: rgba(237, 238, 238, 1);
+  border: none;
+  outline: none;
+  color: rgba(120, 121, 123, 1);
+}
+
+.advisor-line {
+  height: 1px;
+  width: calc(100% - 20px);
+  border: none;
+  border-top: 1px solid white;
+  margin: 0 auto;
+}
+
+#advisor-btn {
+  background-color: rgba(66, 155, 214, 1);
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#advisor-btn > a {
+  color: white;
+}
+
+.advisor-block::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -62px;
+  right: 0;
+  z-index: 10;
+  height: 166px;
+  background-size: 160% 80%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-blue-dark.png");
+}
+
+#advisor-container {
+  z-index: 100;
+  position: relative;
+}
+
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+  #order-block-title {
+    color: rgba(36, 74, 100, 1);
+    font-weight: bold;
+    font-size: 25px;
+    max-width: 300px;
+  }
+
+  #order-block-desc {
+    max-width: 600px;
+  }
+
+  .order-line {
+    display: none;
+  }
+
+  #order-block-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .machine-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .machine-container > h3 {
+    color: rgba(71, 156, 214, 1);
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+  }
+  .machine-link {
+    text-decoration: underline;
+    color: rgba(101, 102, 102, 1);
+    font-size: 10px;
+    display: block;
+  }
+
+  .order-block-container {
+    padding-bottom: 130px;
+  }
+
+  /* advisor */
+  #advisor-title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #advisor-desc {
+    color: rgba(66, 155, 214, 1);
+    font-size: 20px;
+    padding: 0;
+    margin: 5px;
+  }
+
+  #select-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .select-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(21, 74, 102, 1);
+  }
+
+  .select-container {
+    width: 100%;
+  }
+
+  #advisor-btn {
+    margin-bottom: 30px;
+  }
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1024px) {
+  .machine-link {
+    margin-top: 20px;
+  }
+}
