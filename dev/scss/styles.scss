@@ -2,6 +2,7 @@
 
 @use "carousel";
 @use "order_customisation";
+@use "header";
 
 *,
 :after,
@@ -22,4 +23,13 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: rgba(21, 74, 102, 1);
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
 }
