@@ -1,0 +1,151 @@
+/* Header Styles */
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(54, 54, 54, 0.75);
+    z-index: 1000;
+
+    .container {
+        margin: 0;
+        padding: 0 10px;
+        max-width: none;
+
+        .user-bar {
+            display: none; /* Hide for mobile devices */
+        }
+
+        .header-content {
+            padding-top: 8px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between; /* Adjust as needed */
+
+            .logo {
+                width: 99px;
+
+                .vulcan-logo {
+                    display: block;
+                    text-indent: -9999px;
+                    width: 99px;
+                    height: 40.89px;
+                    background: url(../images/logo-white-vulcan.svg);
+                    background-size: 99px 40.89px;
+                }
+            }
+
+            .nav-opener {
+                width: 33px;
+                height: 21px;
+                position: relative;
+                float: right;
+
+                &:before,
+                span,
+                &:after {
+                    content: "";
+                    height: 3px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    background: #edeeee;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                span {
+                    top: 9px;
+                }
+
+                &:after {
+                    top: 18px;
+                }
+
+                &.open {
+                    span {
+                        opacity: 0;
+                    }
+
+                    &:before,
+                    &:after {
+                        top: 9px;
+                        transform: rotate(-45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .nav-area {
+                padding: 11px 0 0;
+                float: right;
+            }
+
+            #nav {
+                margin: 0;
+                font-size: 0;
+                line-height: 0;
+                height: 0;
+                background: rgba(54, 54, 54, 0.75); /* Add this line to match the header background */
+                overflow: hidden;
+                width: 100%;
+                text-align: left;
+                transition: height 0.5s ease;
+                z-index: -1;
+
+                &.nav-active {
+                    height: 240px;
+                }
+
+                li {
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    font-family: "Roboto Condensed", sans-serif;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    &:hover > a {
+                        background: #009ddc;
+                        text-decoration: none;
+                    }
+
+                    a {
+                        color: #fff;
+                        display: block;
+                        padding: 5px 15px;
+                    }
+
+                    .dropdown {
+                        background: rgba(0, 157, 220, 0.72);
+
+                        a {
+                            text-align: left;
+                            padding: 8px 25px;
+                            white-space: normal;
+
+                            &:hover {
+                                background: rgba(21, 74, 102, 0.72);
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Inserted .list-holder styling
+            .list-holder {
+                position: absolute;
+                top: 100%; /* Start offscreen from the bottom */
+                left: 0;
+                width: 100%;
+                z-index: -1;
+                transition: top 0.5s ease; /* Slide down from the top */
+            }
+        }
+    }
+}
