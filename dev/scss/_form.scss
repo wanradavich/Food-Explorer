@@ -1,0 +1,30 @@
+.sign-up {
+    height: 120px;
+    background-color: rgb(196, 219, 237);
+    display: flex;
+    align-items: center;
+}
+#newsletter-text {
+    color: rgb(39, 71, 97);
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+#sign-up-btn {
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: rgba(66, 155, 214, 1);
+    font-weight: 700;
+}
+#email {
+    height: 35px;
+    border: none;
+    margin-right: 5px;
+    width: 187px;
+    margin-top: 7px;
+}
+#email::placeholder {
+    font-size: 0.8em;
+    padding-left: 20px;
+}
