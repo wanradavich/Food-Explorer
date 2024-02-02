@@ -16,20 +16,20 @@ $(document).ready(function(){
 document.addEventListener("DOMContentLoaded", function () {
   const navOpener = document.querySelector('.nav-opener');
   const nav = document.getElementById('nav');
-  const listHolder = document.querySelector('.list-holder'); // Add this line
+  const listHolder = document.querySelector('.list-holder');
 
   navOpener.addEventListener('click', function () {
-    this.classList.toggle('open'); // Add a class for hamburger animation
+    this.classList.toggle('open');
     nav.classList.toggle('nav-active');
-    listHolder.classList.toggle('active'); // Add this line
+    listHolder.classList.toggle('active');
   });
 
   // Close the dropdown when clicking outside
   document.addEventListener('click', function (event) {
-    if (!nav.contains(event.target) && !navOpener.contains(event.target)) {
+    if (!nav.contains(event.target) && !navOpener.contains(event.target) && !listHolder.contains(event.target)) {
       nav.classList.remove('nav-active');
       navOpener.classList.remove('open');
-      listHolder.classList.remove('active'); // Add this line
+      listHolder.classList.remove('active');
     }
   });
 
@@ -38,3 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation();
   });
 });
+
