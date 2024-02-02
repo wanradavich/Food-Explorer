@@ -1,5 +1,4 @@
 /* Header Styles */
-
 #header {
     position: absolute;
     left: 0;
@@ -89,16 +88,19 @@
                 margin: 0;
                 font-size: 0;
                 line-height: 0;
-                height: 0;
+                height: 240px;
                 background: rgba(54, 54, 54, 0.75); /* Add this line to match the header background */
                 overflow: hidden;
                 width: 100%;
                 text-align: left;
-                transition: height 0.5s ease;
+                transform: translateY(-240px); /* Start offscreen by translating up 240px */
+                transition: transform 0.5s ease;
                 z-index: -1;
+                visibility: hidden;
 
                 &.nav-active {
-                    height: 240px;
+                    transform: translateY(0);
+                    visibility: visible;
                 }
 
                 li {
@@ -144,8 +146,72 @@
                 left: 0;
                 width: 100%;
                 z-index: -1;
-                transition: top 0.5s ease; /* Slide down from the top */
             }
         }
     }
 }
+
+
+main {
+    position: relative;
+    overflow: hidden;
+    .list-holder {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        top: 58.88px;
+        overflow: hidden;
+        #nav {
+            margin: 0;
+            font-size: 0;
+            line-height: 0;
+            height: 240px;
+            background: rgba(54, 54, 54, 0.75); /* Add this line to match the header background */
+            overflow: hidden;
+            width: 100%;
+            text-align: left;
+            transform: translateY(-240px); /* Start offscreen by translating up 240px */
+            transition: transform 0.5s ease;
+            z-index: -1;
+
+            &.nav-active {
+                transform: translateY(0);
+            }
+
+            li {
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 500;
+                letter-spacing: 0;
+                font-family: "Roboto Condensed", sans-serif;
+                margin-left: auto;
+                margin-right: auto;
+
+                &:hover > a {
+                    background: #009ddc;
+                    text-decoration: none;
+                }
+
+                a {
+                    color: #fff;
+                    display: block;
+                    padding: 5px 15px;
+                }
+
+                .dropdown {
+                    background: rgba(0, 157, 220, 0.72);
+
+                    a {
+                        text-align: left;
+                        padding: 8px 25px;
+                        white-space: normal;
+
+                        &:hover {
+                            background: rgba(21, 74, 102, 0.72);
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
