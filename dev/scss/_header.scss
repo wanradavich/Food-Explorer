@@ -1,5 +1,4 @@
 /* Header Styles */
-
 #header {
     position: absolute;
     left: 0;
@@ -89,16 +88,17 @@
                 margin: 0;
                 font-size: 0;
                 line-height: 0;
-                height: 0;
+                height: 240px;
                 background: rgba(54, 54, 54, 0.75); /* Add this line to match the header background */
                 overflow: hidden;
                 width: 100%;
                 text-align: left;
-                transition: height 0.5s ease;
+                transform: translateY(-240px); /* Start offscreen by translating up 240px */
+                transition: transform 0.5s ease;
                 z-index: -1;
 
                 &.nav-active {
-                    height: 240px;
+                    transform: translateY(0);
                 }
 
                 li {
@@ -144,7 +144,7 @@
                 left: 0;
                 width: 100%;
                 z-index: -1;
-                transition: top 0.5s ease; /* Slide down from the top */
+                overflow: hidden;
             }
         }
     }
