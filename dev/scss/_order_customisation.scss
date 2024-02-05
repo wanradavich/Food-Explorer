@@ -2,7 +2,7 @@
 .order-block {
   position: relative;
   background-color: white;
-  padding: 0;
+  padding: 33px 10px 77px;
   margin: 0;
 }
 
@@ -176,6 +176,14 @@
 
 /* Media query for Tablets */
 @media screen and (min-width: 768px) {
+
+  .order-block::before {
+    background-size: 100%;
+    left: 0;
+    height: 100%;
+    top:-58px;
+  }
+
   #order-block-title {
     color: rgba(36, 74, 100, 1);
     font-weight: bold;
