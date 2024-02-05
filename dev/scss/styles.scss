@@ -39,3 +39,16 @@ a {
 }
 
 
+// Media query for Desktops
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 740px;
+  }
+}
+
+// Media query for Desktops
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
