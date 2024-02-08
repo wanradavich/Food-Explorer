@@ -101,12 +101,7 @@
         transform: translateY(
           -240px
         ); /* Start offscreen by translating up 240px */
-        transition: transform 0.5s ease;
         z-index: -1;
-
-        &.nav-active {
-          transform: translateY(0);
-        }
 
         li {
           font-size: 18px;
@@ -296,7 +291,8 @@
             0.75
           );
           width: 100%;
-          transform: none;
+          transform: translateY(0) !important;
+          transition: none !important;
           text-align: center;
 
           li {
@@ -486,7 +482,6 @@
                 0.75
               );
               width: 100%;
-              transform: none;
               text-align: center;
     
               li {
@@ -905,4 +900,6 @@
       .visible-xs {
         display: none;
       }
+
+
 }

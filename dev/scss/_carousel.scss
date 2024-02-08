@@ -44,6 +44,7 @@
         padding: 70px 0 100px;
         text-transform: uppercase;
         text-align: center;
+        height: 100%;
 
         &:before,
         &:after {
@@ -52,7 +53,7 @@
           position: relative;
           vertical-align: middle;
           width: 0;
-          min-height: 75px;
+          min-height: 100%;
         }
 
         h1 {
@@ -619,6 +620,7 @@
           padding: 260px 0 90px;
           text-transform: uppercase;
           text-align: center;
+          height: 100%;
   
           &:before,
           &:after {
@@ -627,7 +629,7 @@
             position: relative;
             vertical-align: middle;
             width: 0;
-            min-height: 45px;
+            min-height: 100%;
           }
   
           h1 {
@@ -707,4 +709,5 @@
   .slick-dotted.slick-slider {
     margin-bottom: 0 !important; /* Use !important to ensure the style is applied */
   }
+
 }
