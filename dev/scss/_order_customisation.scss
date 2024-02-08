@@ -187,9 +187,9 @@ select {
 @media screen and (min-width: 768px) {
 
   .order-block::before {
-    background-size: 100%;
+    background-size: 100% 100%;
     left: 0;
-    height: 100%;
+    height: 100px;
     top:-58px;
   }
 
