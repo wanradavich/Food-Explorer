@@ -45,6 +45,8 @@
   font-size: 13px;
   margin-left: 10px;
   max-width: 80px;
+  text-align: left;
+  font-weight: bold;
 }
 
 .machine-link {
@@ -91,20 +93,30 @@
 }
 
 /* product advisor */
+.order-block-advisor {
+  position: relative;
+  background-color: rgba(21, 74, 102, 1);
+  padding: 33px 10px 40px;
+  margin: 0;
+}
+
 #advisor-block-header {
   color: white;
   text-align: center;
 }
 
 #advisor-title {
-  font-size: 18px;
-  padding-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 #advisor-desc {
   font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 select {
@@ -120,6 +132,7 @@ select {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-top: 0;
   background-color: rgba(21, 74, 102, 1);
 }
 
@@ -149,8 +162,10 @@ select {
   height: 1px;
   width: calc(100% - 20px);
   border: none;
-  border-top: 1px solid white;
+  border-top: 1.5px solid white;
   margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #advisor-btn {
@@ -183,14 +198,21 @@ select {
   position: relative;
 }
 
+.button-container {
+  padding: 20px 10px;
+}
+
 /* Media query for Tablets */
 @media screen and (min-width: 768px) {
+  .order-block {
+    padding: 33px 10px 120px;
+  }
 
   .order-block::before {
     background-size: 100% 100%;
     left: 0;
     height: 100px;
-    top:-58px;
+    top: -58px;
   }
 
   #order-block-title {
@@ -225,6 +247,7 @@ select {
     padding: 0;
     margin: 0;
     font-weight: bold;
+    text-align: center;
   }
   .machine-link {
     text-decoration: underline;
@@ -237,10 +260,31 @@ select {
     padding-bottom: 130px;
   }
 
+  .order-block-advisor {
+    padding: 33px 10px 20px;
+  }
+
+  .advisor-block::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -58px;
+    right: 0;
+    z-index: 10;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/wave-blue-dark.png");
+  }
+
   /* advisor */
   #advisor-title {
     font-size: 25px;
     font-weight: bold;
+  }
+
+  .advisor-line {
+    margin-bottom: 15px;
   }
   #advisor-desc {
     color: rgba(66, 155, 214, 1);
@@ -262,6 +306,7 @@ select {
 
   .select-container {
     width: 100%;
+    padding-top: 0;
   }
 
   #advisor-btn {
@@ -270,14 +315,27 @@ select {
 
   select {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(66, 155, 214, 1)" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>')
-      96% / 2% no-repeat;
+      96% / 3% no-repeat;
   }
 }
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1024px) {
   .machine-link {
+    margin-top: 5px;
+  }
+
+  .machine-container > img {
+    max-width: 250px;
+    height: auto;
     margin-top: 20px;
+  }
+
+  .machine-container > h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .select-row {
@@ -293,6 +351,10 @@ select {
 
   .select-container {
     min-width: 205px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
   }
 
   .select-block {
@@ -306,5 +368,20 @@ select {
   #advisor-btn {
     max-width: 1005px;
     margin: 0 auto;
+  }
+
+  .order-block-advisor {
+    padding: 33px 10px 35px;
+  }
+
+  select {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(66, 155, 214, 1)" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>')
+      96% / 8% no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #advisor-btn {
+    max-width: 990px;
   }
 }
