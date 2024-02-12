@@ -228,6 +228,7 @@
 
                   &:hover {
                     color: #009ddc;
+
                   }
                 }
               }
@@ -328,6 +329,11 @@
   .visible-xs {
     display: none;
   }
+
+  .user-list li a:hover i {
+    color: #009ddc;
+}
+
 }
 
 // Media query for Desktops

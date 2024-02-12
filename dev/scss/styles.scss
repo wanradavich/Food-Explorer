@@ -38,6 +38,13 @@ a {
   max-width: 100%;
 }
 
+.white-icon {
+  color: white;
+  margin-top: 1.5px;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 // Media query for Desktops
 @media screen and (min-width: 1024px) {
