@@ -16,6 +16,32 @@
   }
 }
 
+// Media query for Tablets
+@media screen and (min-width: 768px) {
+  .video {
+    padding: 5%;
+  }
+  .video-iframe {
+    width: 68%;
+    border: 20px solid #234058;
+    height: calc(0.5806 * 62vw);
+  }
+}
+
+// Media query for Mobile 
+@media screen and (max-width: 425px) {
+  .video {
+    padding: 5%;
+  }
+  .video-iframe {
+    width: 63.5%;
+    border: 10px solid #234058;
+    height: calc(0.5806 * 62vw);
+  }
+}
+
+
+
 // .video-panel {
 //     background-color: #009ddc;
 //     position: relative;
