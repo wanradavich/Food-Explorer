@@ -23,9 +23,61 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 #copyright {
     margin-bottom: 30px;
     margin-top: 10px;
     
+}
+.footer-holder::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -62px;
+    right: 0;
+    z-index: 10;
+    height: 166px;
+    background-size: 160% 80%;
+    background-repeat: no-repeat;
+    background-image: url("../images/wave-blue-light.png");
+  }
+
+@media (min-width: 470px) {
+    #copyright {
+        margin-top: 0;
+    }
+    #footer-contact {
+        margin-top: 0;
+    }
+    #vulcan-logo-footer {
+        height: 65px;
+    }
+    #footer-logo {
+        margin-bottom: 20px;
+    }
+}
+@media(min-width: 768px) {
+    // #footer-contact {
+    //     margin-top: 0;
+    // }
+    // #vulcan-logo-footer {
+    //     height: 65px;
+    // }
+    #footer-logo {
+        margin-bottom: 40px;
+        width: 275px;
+    }
+    .footer-holder {
+        display: flex;
+    }
+    #footer-contact {
+        height: 70px;
+        margin-top: 30px;
+        width: 400px;
+        margin-right: 60px;
+    }
+    #copyright {
+        margin-bottom: 0;
+    }
 }

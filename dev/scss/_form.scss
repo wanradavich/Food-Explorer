@@ -21,10 +21,41 @@
     height: 35px;
     border: none;
     margin-right: 5px;
-    width: 187px;
+    width: 60%;
     margin-top: 7px;
 }
 #email::placeholder {
     font-size: 0.8em;
     padding-left: 20px;
+}
+@media(min-width: 400px) {
+    #email {
+        width: 70%;
+    }
+}
+@media(min-width: 768px){
+    #email {
+        min-width: 280px;
+        margin-top: 0;
+        margin-right: 8px;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #input-button-container {
+        display: flex;
+        margin-left: 10px;
+    }
+    .sign-up {
+        height: 80px;
+    }
+    .container {
+        padding: 0 5px;
+        max-width: 750px;
+    }
+    #email::placeholder {
+        font-size: 1em;
+        padding-left: 15px;
+    }
 }
