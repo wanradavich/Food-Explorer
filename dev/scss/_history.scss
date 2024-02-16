@@ -1,3 +1,22 @@
+
+
+.history-info h2{
+    color: #fff;
+    font-size: 33px;
+    line-height: 36px;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.history-info .text {
+    font-size: 14px;
+    margin: 0;
+    width: 290px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 .history-info {
     color: #fff;
     background-size: cover;
@@ -23,20 +42,7 @@
     padding-right: 10px;
 }
 
-.history-info .text{
-    font-size: 14px;
-    line-height: 17px;
-    padding: 0 50px 60px;
-}
 
-.history-info h2{
-    color: #fff;
-    font-size: 49px;
-    line-height: 49px;
-    margin: 0 0 23px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
 .history-info .text p{
     margin: 0;
@@ -62,8 +68,8 @@
     color: #007BFF; 
 }
 
-// Media query for Mobile 
-@media screen and (max-width: 425px) {
+// Media query for Tablet
+@media screen and (min-width: 768px) {
 
     .history-info h2{
         color: #fff;
@@ -73,15 +79,19 @@
         text-transform: uppercase;
         font-weight: 700;
     }
-    .history-info .text p{
+    .history-info .text {
         font-size: 17px;
         margin: 0;
+        width: 700px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
     }
 
   }
 
   // Media query for Mobile 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 768px) {
 
     .history-info h2{
         color: #fff;
@@ -91,9 +101,34 @@
         text-transform: uppercase;
         font-weight: 700;
     }
-    .history-info .text p{
+    .history-info .text {
         font-size: 17px;
         margin: 0;
+        width: 700px;
+        display: flex;
+        margin: auto;
+    }
+
+  }
+
+    // Media query for Desktop
+@media screen and (min-width: 1024px) {
+
+    .history-info h2{
+        color: #fff;
+        font-size: 49px;
+        line-height: 49px;
+        margin: 0 0 23px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .history-info .text {
+        font-size: 17px;
+        margin: 0;
+        width: 700px;
+        display: flex;
+        margin: auto;
     }
 
   }
