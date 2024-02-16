@@ -16,14 +16,26 @@
   }
 }
 
+// Media query for Desktop
+@media screen and (max-width: 1024px) {
+    .video {
+      padding: 5%;
+    }
+    .video-iframe {
+      width: 68%;
+      border: 15px solid #234058;
+      height: calc(0.5806 * 62vw);
+    }
+  }
+
 // Media query for Tablets
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .video {
     padding: 5%;
   }
   .video-iframe {
     width: 68%;
-    border: 20px solid #234058;
+    border: 15px solid #234058;
     height: calc(0.5806 * 62vw);
   }
 }
