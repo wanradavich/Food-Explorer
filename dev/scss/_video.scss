@@ -1,0 +1,87 @@
+/* video */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    background-color: #468ECC;
+  &-iframe {
+    background-color: #01882A;
+    border: 20px solid #234058;
+    width: 78%;
+    height: calc(0.5806 * 62vw);
+  }
+}
+
+// Media query for Desktop
+@media screen and (max-width: 1024px) {
+    .video {
+      padding: 5%;
+    }
+    .video-iframe {
+      width: 68%;
+      border: 15px solid #234058;
+      height: calc(0.5806 * 62vw);
+    }
+  }
+
+// Media query for Tablets
+@media screen and (max-width: 768px) {
+  .video {
+    padding: 5%;
+  }
+  .video-iframe {
+    width: 68%;
+    border: 15px solid #234058;
+    height: calc(0.5806 * 62vw);
+  }
+}
+
+// Media query for Mobile 
+@media screen and (max-width: 425px) {
+  .video {
+    padding: 5%;
+  }
+  .video-iframe {
+    width: 63.5%;
+    border: 10px solid #234058;
+    height: calc(0.5806 * 62vw);
+  }
+}
+
+
+
+// .video-panel {
+//     background-color: #009ddc;
+//     position: relative;
+//     z-index: 1;
+//   }
+  
+//   .video-panel .container {
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//   }
+  
+  
+//   .embed-container {
+//     position: relative;
+//     padding-bottom: 59.25%;
+//     height: 0;
+//     overflow: hidden;
+//     max-width: 100%;
+//   }
+  
+//   .embed-container iframe,
+//   .embed-container object,
+//   .embed-container embed {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 98%;
+//     height: 97%;
+//     border: 15px solid #154a66; 
+//     /* overflow: hidden; */
+//   }
