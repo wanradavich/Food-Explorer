@@ -1,0 +1,64 @@
+.history-info {
+    color: #fff;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    z-index: 1;
+}
+
+.history-info .container {
+    padding-top: 155px;
+    padding-bottom: 91px;
+}
+
+.history-info-container {
+    padding-top: 150px !important;
+}
+
+.contain {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.history-info .text{
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 50px 60px;
+}
+
+.history-info h2{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.history-info .text p{
+    margin: 0;
+}
+
+.about-btn {
+    display: inline-block;
+    font-weight: 700;
+    color: white; 
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.about-btn:hover {
+    background-color: white; 
+    color: #007BFF; 
+}
+
+
