@@ -46,7 +46,8 @@
     }
     #input-button-container {
         display: flex;
-        margin-left: 10px;
+        //margin-left: 10px;
+        width: 51%;
     }
     .sign-up {
         height: 80px;
@@ -59,23 +60,31 @@
         font-size: 1em;
         padding-left: 15px;
     }
+    #newsletter-text {
+        width: 49%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    
 }
 @media(min-width: 1024px){
     #email {
-        min-width: 420px;
+        //min-width: 420px;
         margin-right: 15px;
     }
     #input-button-container {
-        margin-left: 30px;
-        width: 53%;
+        //margin-left: 30px;
+        width: 48%;
         display: flex;
         align-items: center;
     }
     #newsletter-text {
-        display: flex;
-        justify-content: flex-end;
+        // display: flex;
+        // justify-content: flex-end;
         font-size: 1.7em;
         margin-bottom: 0;
+        width: 52%;
     }
 }
 @media(min-width: 1620px) {

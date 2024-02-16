@@ -4,6 +4,7 @@
     color: white;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 #vulcan-spec {
     font-size: 2em;
@@ -20,6 +21,9 @@
     height: 40px;
     margin-top: 30px;
 } 
+#vulcan-spec2 {
+    display: none;
+}
 .user-block{
     margin-bottom: 120px;
 }
@@ -69,6 +73,17 @@
     margin-top: 25px;
     margin-bottom: 10px;
 }
+.user-block::after {
+    content: "";
+    position: absolute;
+    left: -140px;
+    right: 0;
+    z-index: 10;
+    height: 166px;
+    background-size: 165% 80%;
+    background-repeat: no-repeat;
+    background-image: url("../images/wave-blue-light.png");
+  }
 @media (min-width: 768px) {
     .location {
         display: flex;
@@ -102,21 +117,64 @@
     }
     #vulcan-spec {
         font-size: 1.9em;
+        margin-top: 60px;
     }
     .map-container {
         margin-bottom: 15px;
     }
+    .user-block::after {
+        content: "";
+        position: absolute;
+        left: -140px;
+        right: 0;
+        z-index: 10;
+        height: 166px;
+        margin-top: 329px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/wave-blue-light.png");
+      }
 }
 @media(min-width: 1024px) {
+    // #location-contact-us {
+    //     width: 150px;
+    // }
+    .user-block::after {
+        margin-top: 315px;
+    }
+}
+@media (min-width: 1155px) {
+    #vulcan-spec {
+        display: none;
+    }
+    #vulcan-spec2 {
+        display: block;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    #installed-in {
+        font-size: 3rem;
+    }
     #location-contact-us {
-        width: 150px;
+        width: 110px;
     }
 }
 @media(min-width: 1620px) {
     #installed-in {
         font-size: 3rem;
+        margin-top: 30px;
+        margin-bottom: 60px;
     }
-    #vulcan-spec {
+    #vulcan-spec2 {
         font-size: 3rem;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    #location-contact-us {
+        width: 140px;
+    }
+    .user-block::after {
+        margin-top: 435px;
     }
 }
