@@ -106,5 +106,17 @@
     .map-container {
         margin-bottom: 15px;
     }
-
+}
+@media(min-width: 1024px) {
+    #location-contact-us {
+        width: 150px;
+    }
+}
+@media(min-width: 1620px) {
+    #installed-in {
+        font-size: 3rem;
+    }
+    #vulcan-spec {
+        font-size: 3rem;
+    }
 }
