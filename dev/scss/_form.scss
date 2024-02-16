@@ -42,6 +42,7 @@
     .form-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     #input-button-container {
         display: flex;
@@ -57,5 +58,14 @@
     #email::placeholder {
         font-size: 1em;
         padding-left: 15px;
+    }
+}
+@media(min-width: 1024px){
+    #email {
+        min-width: 420px;
+        margin-right: 15px;
+    }
+    #input-button-container {
+        margin-left: 30px;
     }
 }

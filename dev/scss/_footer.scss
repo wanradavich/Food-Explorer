@@ -2,7 +2,12 @@
 //     background-image: url(../images/wave-blue-light.png);
 //     background-repeat: no-repeat;
 // }
-
+footer {
+    background-color: rgba(71, 156, 214, 1)
+}
+#footer-logo {
+    z-index: 1;
+}
 #vulcan-logo-footer {
     height: 40px;
 }
@@ -11,7 +16,6 @@
 }
 #linkedin {
     margin-left: 7px;
-
 }
 #phone-number, #contact-us-footer, #copyright {
     color: white;
@@ -28,19 +32,24 @@
 #copyright {
     margin-bottom: 30px;
     margin-top: 10px;
-    
 }
-.footer-holder::before {
-    content: "";
-    position: absolute;
-    left: -60px;
-    top: -62px;
-    right: 0;
-    z-index: 10;
-    height: 166px;
-    background-size: 160% 80%;
-    background-repeat: no-repeat;
-    background-image: url("../images/wave-blue-light.png");
+.footer-holder {
+    z-index: 100;
+}
+// .user-block::after {
+//     content: "";
+//     position: absolute;
+//     left: -60px;
+//     //top: -62px;
+//     right: 0;
+//     z-index: 10;
+//     height: 166px;
+//     background-size: 160% 80%;
+//     background-repeat: no-repeat;
+//     background-image: url("../images/wave-blue-light.png");
+//   }
+  #email-icon {
+    height: 15px;
   }
 
 @media (min-width: 470px) {
@@ -79,5 +88,59 @@
     }
     #copyright {
         margin-bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    #footer-contact > div {
+        padding: 10px;
+    }
+    #footer-contact {
+        width: 70%;
+        justify-content: flex-start;
+    }
+    .footer-holder {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #footer-logo {
+        margin-bottom: 0;
+        width: 40%;
+        //padding-right: 200px;
+    }
+    #location-contact-us {
+        width: 150px;
+    }
+    #vulcan-logo-footer {
+        height: 85px;
+    }
+}
+@media (min-width: 1300px) {
+    #footer-contact {
+        width: 52%;
+    }
+}
+@media (min-width: 1620px) {
+    #footer-contact {
+        width: 48%;
+    }
+    #footer-logo {
+        padding-right: 200px;
+    }
+    #footer {
+        margin-top: 20px;
+    }
+    #input-button-container {
+        width: 50%;
+        margin-left: -15px;
+    }
+    #newsletter-text {
+        width: 50%;
+        font-size: 1.7rem;
+    }
+    #vulcan-spec {
+        font-size: 3rem;
+    }
+    #installed-in {
+        font-size: 3rem;
     }
 }
