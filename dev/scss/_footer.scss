@@ -1,129 +1,135 @@
 footer {
-    background-color: rgba(0, 157, 220, 1);
+  background-color: rgba(0, 157, 220, 1);
 }
 #footer-logo {
-    z-index: 100;
-    position: relative;
+  z-index: 100;
+  position: relative;
 }
 #vulcan-logo-footer {
-    height: 40px;
+  height: 40px;
 }
-#facebook, #linkedin {
-    height: 25px;
+#facebook,
+#linkedin {
+  height: 25px;
 }
 #linkedin {
-    margin-left: 7px;
+  margin-left: 7px;
 }
-#phone-number, #contact-us-footer, #copyright {
-    color: white;
-    font-weight: 500;
-    font-size: 0.9em;
+#phone-number,
+#contact-us-footer,
+#copyright {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
 }
 #footer-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
 }
 #copyright {
-    margin-bottom: 30px;
-    margin-top: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 .footer-holder {
-    z-index: 100;
+  z-index: 100;
 }
-#phone-number, #contact-us-footer {
-    padding-top: 2px;
+#phone-number,
+#contact-us-footer {
+  padding-top: 2px;
 }
 
-  #email-icon {
-    height: 15px;
-  }
+#email-icon {
+  height: 15px;
+}
 
 @media (min-width: 470px) {
-    #copyright {
-        margin-top: 0;
-    }
-    #footer-contact {
-        margin-top: 0;
-        margin-right: 50px;
-    }
-    #vulcan-logo-footer {
-        height: 65px;
-    }
-    #footer-logo {
-        margin-bottom: 20px;
-    }
+  #copyright {
+    margin-top: 0;
+  }
+  #footer-contact {
+    margin-top: 0;
+    margin-right: 50px;
+  }
+  #vulcan-logo-footer {
+    height: 65px;
+  }
+  #footer-logo {
+    margin-bottom: 20px;
+  }
 }
-@media(min-width: 768px) {
-    // #footer-contact {
-    //     margin-top: 0;
-    // }
-    // #vulcan-logo-footer {
-    //     height: 65px;
-    // }
-    #footer-logo {
-        margin-bottom: 40px;
-        width: 275px;
-        padding-right: 60px;
-    }
-    .footer-holder {
-        display: flex;
-    }
-    #footer-contact {
-        height: 70px;
-        margin-top: 30px;
-        width: 400px;
-        margin-right: 60px;
-    }
-    
-    #copyright {
-        margin-bottom: 0;
-    }
+@media (min-width: 768px) {
+  // #footer-contact {
+  //     margin-top: 0;
+  // }
+  // #vulcan-logo-footer {
+  //     height: 65px;
+  // }
+  #footer-logo {
+    // margin-bottom: 40px;
+    width: 275px;
+    padding-right: 60px;
+  }
+  .footer-holder {
+    display: flex;
+  }
+  #footer-contact {
+    height: 80px;
+    margin-top: 30px;
+    width: 400px;
+    margin-right: 60px;
+  }
+
+  #copyright {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1024px) {
-    #footer-contact > div {
-        padding: 10px;
-    }
-    #footer-contact {
-        width: 70%;
-        justify-content: flex-start;
-    }
-    .footer-holder {
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    #footer-logo {
-        margin-bottom: 0;
-        width: 40%;
-        //padding-right: 200px;
-    }
-    
-    #vulcan-logo-footer {
-        height: 85px;
-    }
+  #footer-contact > div {
+    padding: 10px;
+  }
+  #footer-contact {
+    width: 70%;
+    justify-content: flex-start;
+  }
+  .footer-holder {
+    align-items: center;
+    // margin-bottom: 20px;
+  }
+  #footer-logo {
+    margin-bottom: 0;
+    width: 40%;
+    padding-bottom: 30px;
+  }
+
+  #vulcan-logo-footer {
+    height: 85px;
+  }
 }
 @media (min-width: 1300px) {
-    #footer-contact {
-        width: 52%;
-    }
+  #footer-contact {
+    width: 52%;
+  }
 }
 @media (min-width: 1620px) {
-    #footer-contact {
-        width: 48%;
-    }
-    #footer-logo {
-        padding-right: 200px;
-    }
-    #footer {
-        margin-top: 20px;
-    }
+  #footer-contact {
+    width: 48%;
+  }
+  #footer-logo {
+    padding-right: 200px;
+  }
+  #footer {
+    margin-top: 20px;
+  }
 }
 @media (min-width: 1620px) {
-    #phone-number, #contact-us-footer, #copyright {
-        padding-top: 2px;
-    }
+  #phone-number,
+  #contact-us-footer,
+  #copyright {
+    padding-top: 2px;
+  }
 }
