@@ -1,0 +1,135 @@
+.history-info h2{
+    color: #fff;
+    font-size: 33px;
+    line-height: 36px;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.history-info .text {
+    font-size: 14px;
+    margin: 0;
+    // width: 290px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 290px;
+}
+
+.history-info {
+    color: #fff;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    z-index: 1;
+}
+
+.history-info .container {
+    padding-top: 155px;
+    padding-bottom: 91px;
+}
+
+.history-info-container {
+    padding-top: 150px !important;
+}
+
+.contain {
+
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.history-info .text p{
+    margin: 0;
+}
+
+.about-btn {
+    display: inline-block;
+    font-weight: 700;
+    color: white; 
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; 
+    padding: 10px 50px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.about-btn:hover {
+    background-color: white; 
+    color: #007BFF; 
+}
+
+// Media query for Tablet
+// @media screen and (min-width: 768px) {
+
+//     .history-info h2{
+//         color: #fff;
+//         font-size: 36px;
+//         line-height: 42px;
+//         margin: 0 0 23px;
+//         text-transform: uppercase;
+//         font-weight: 700;
+//     }
+//     .history-info .text {
+//         font-size: 17px;
+//         margin: 0;
+//         width: 700px;
+//         display: flex;
+//         margin: auto;
+//         justify-content: center;
+//     }
+
+//   }
+
+  // Media query for Mobile 
+@media screen and (min-width: 768px) {
+
+    .history-info h2{
+        color: #fff;
+        font-size: 33px;
+        line-height: 36px;
+        margin: 0 0 23px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .history-info .text {
+        font-size: 17px;
+        margin: 0;
+        max-width: 500px;
+        display: flex;
+        margin: auto;
+    }
+
+  }
+
+    // Media query for Desktop
+@media screen and (min-width: 1024px) {
+
+    .history-info h2{
+        color: #fff;
+        font-size: 49px;
+        line-height: 49px;
+        margin: 0 0 23px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .history-info .text {
+        font-size: 17px;
+        margin: 0;
+        max-width: 600px;
+        display: flex;
+        margin: auto;
+    }
+
+  }
+
+
