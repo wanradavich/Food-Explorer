@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -66,7 +70,6 @@ a {
     width: 1200px;
   }
 }
-
 
 @media screen and (min-width: 1620px) {
   .container {
