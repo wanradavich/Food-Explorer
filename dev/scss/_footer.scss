@@ -12,6 +12,12 @@ footer {
 #linkedin {
   height: 25px;
 }
+
+#vulcan-logo-footer:hover,
+#facebook:hover,
+#linkedin:hover {
+    cursor: pointer;
+}
 #linkedin {
   margin-left: 7px;
 }
@@ -21,6 +27,12 @@ footer {
   color: white;
   font-weight: 500;
   font-size: 0.9em;
+}
+
+#phone-number:hover,
+#contact-us-footer:hover {
+    color: #3b3b3b; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 #footer-contact {
   display: flex;

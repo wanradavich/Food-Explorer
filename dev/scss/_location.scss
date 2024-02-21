@@ -80,6 +80,14 @@ position: relative;
     background-repeat: no-repeat;
     background-image: url("../images/wave-blue-light.png");
   }
+
+  #sign-up-btn:hover,
+  #location-contact-us:hover,
+  #find-vulcan:hover {
+    background-color: #3b3b3b; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
 // Tablet View
 @media (min-width: 768px) {
     .location {
