@@ -46,7 +46,7 @@ footer {
 #email-icon {
   height: 15px;
 }
-
+// Mobile View
 @media (min-width: 470px) {
   #copyright {
     margin-top: 0;
@@ -62,15 +62,9 @@ footer {
     margin-bottom: 20px;
   }
 }
+// Tablet View
 @media (min-width: 768px) {
-  // #footer-contact {
-  //     margin-top: 0;
-  // }
-  // #vulcan-logo-footer {
-  //     height: 65px;
-  // }
   #footer-logo {
-    // margin-bottom: 40px;
     width: 275px;
     padding-right: 60px;
   }
@@ -83,11 +77,11 @@ footer {
     width: 400px;
     margin-right: 90px;
   }
-
   #copyright {
     margin-bottom: 0;
   }
 }
+// Desktop View
 @media (min-width: 1024px) {
   #footer-contact > div {
     padding: 10px;
@@ -98,14 +92,12 @@ footer {
   }
   .footer-holder {
     align-items: center;
-    // margin-bottom: 20px;
   }
   #footer-logo {
     margin-bottom: 0;
     width: 40%;
     padding-bottom: 30px;
   }
-
   #vulcan-logo-footer {
     height: 85px;
   }

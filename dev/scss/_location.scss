@@ -31,11 +31,7 @@
     width: 100%;
     min-height: 330px;
     object-fit: cover;
-    // position: absolute;
-    // left: 50%;
-    // transform: translateX(-50%);
 }
-
 .map-container {
     overflow: hidden;
     width: 100%;
@@ -58,21 +54,21 @@
     font-size: 1.9em;
     line-height: 1;
     z-index: 1; /* Place the overlay above the map */
-  }
-  .location {
-    position: relative;
-  }
+}
+.location {
+position: relative;
+}
 #find-vulcan {
     font-size: 1.1rem;
     line-height: 20px;
     border: 1px solid rgb(80, 79, 79);
     padding: 11px 12px;
-    
 }
 #installed-in {
     margin-top: 25px;
     margin-bottom: 10px;
 }
+// Wave styling
 .user-block::after {
     content: "";
     position: absolute;
@@ -84,6 +80,7 @@
     background-repeat: no-repeat;
     background-image: url("../images/wave-blue-light.png");
   }
+// Tablet View
 @media (min-width: 768px) {
     .location {
         display: flex;
@@ -109,9 +106,6 @@
     #map-overlay {
         bottom: 20px;
     }
-    // #find-vulcan {
-    //     font-size: 0.9rem;
-    // }
     #map-img {
         min-height: 370px;
     }
@@ -135,10 +129,8 @@
         background-image: url("../images/wave-blue-light.png");
       }
 }
+// Desktop View
 @media(min-width: 1024px) {
-    // #location-contact-us {
-    //     width: 150px;
-    // }
     .user-block::after {
         margin-top: 303px;
         background-size: 100% 75%;
@@ -161,6 +153,7 @@
         width: 110px;
     }
 }
+// Larger Desktop View
 @media (min-width: 1440px) {
     .user-block::after {
         margin-top: 383px;
