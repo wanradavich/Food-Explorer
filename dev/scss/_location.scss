@@ -129,8 +129,8 @@
         right: 0;
         z-index: 10;
         height: 166px;
-        margin-top: 329px;
-        background-size: contain;
+        margin-top: 313px;
+        background-size: 100% 64%;
         background-repeat: no-repeat;
         background-image: url("../images/wave-blue-light.png");
       }
@@ -140,7 +140,8 @@
     //     width: 150px;
     // }
     .user-block::after {
-        margin-top: 315px;
+        margin-top: 303px;
+        background-size: 100% 75%;
     }
 }
 @media (min-width: 1155px) {
@@ -160,6 +161,12 @@
         width: 110px;
     }
 }
+@media (min-width: 1440px) {
+    .user-block::after {
+        margin-top: 383px;
+        background-size: 100% 85%;
+    }
+}
 @media(min-width: 1620px) {
     #installed-in {
         font-size: 3rem;
@@ -175,6 +182,7 @@
         width: 140px;
     }
     .user-block::after {
-        margin-top: 435px;
+        margin-top: 434px;
+        background-size: 100% 92%;
     }
 }
