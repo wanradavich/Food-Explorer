@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 950%;
     width: 100%;
-    padding: 10%;
+    padding: 5% 10%;
     background-color: #468ECC;
   &-iframe {
     background-color: #01882A;
@@ -17,9 +17,16 @@
 }
 
 // Media query for Desktop
+@media screen and (min-width: 1620x) {
+  .video {
+    padding: 3% 11%;
+  }
+}
+
+// Media query for Desktop
 @media screen and (max-width: 1024px) {
     .video {
-      padding: 5%;
+      padding: 4% 6%;
     }
     .video-iframe {
       width: 68%;
