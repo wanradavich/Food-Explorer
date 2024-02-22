@@ -162,12 +162,21 @@ position: relative;
         width: 110px;
     }
 }
+
+@media(min-width: 1430px) {
+    .user-block::after {
+        margin-top: 312px;
+        background-size: 100% 100%;
+        height: 111px;
+    }
+}
+
 // Larger Desktop View
 @media (min-width: 1440px) {
     .user-block::after {
-        margin-top: 351px;
+        margin-top: 325px;
         background-size: 100% 100%;
-        height: 200px;
+        height: 150px;
     }
 }
 @media(min-width: 1620px) {
@@ -185,10 +194,28 @@ position: relative;
         width: 140px;
     }
     .user-block::after {
-        margin-top: 409px;
+        margin-top: 375px;
         background-size: 100% 100%;
+        height: 155px;
     }
 }
+
+@media (min-width: 1740px) {
+    .user-block::after {
+        margin-top: 390px;
+        background-size: 100% 100%;
+        height: 180px;
+    }
+}
+
+@media (min-width: 1880px) {
+    .user-block::after {
+        margin-top: 407px;
+        background-size: 100% 100%;
+        height: 225px;
+    }
+}
+
 @media (min-width: 2560px) {
     .user-block::after {
         margin-top: 677px;
