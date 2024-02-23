@@ -1,19 +1,18 @@
 .history-info h2{
     color: #fff;
-    font-size: 33px;
-    line-height: 36px;
-    margin: 0 0 23px;
+    font-size: 26px;
+    line-height: 31px;
+    margin: -24px 0 23px;
     text-transform: uppercase;
     font-weight: 700;
+;
 }
 .history-info .text {
-    font-size: 14px;
-    margin: 0;
-    // width: 290px;
+    line-height: 15px;
     display: flex;
     margin: auto;
     padding-bottom: 20px;
-    max-width: 290px;
+    max-width: 155px;
 }
 
 .history-info {
@@ -27,7 +26,7 @@
 .history-info .container {
     padding-top: 155px;
     padding-bottom: 91px;
-    height:630px
+    height:465px
 }
 
 .history-info-container {
@@ -49,7 +48,7 @@
 
 .history-info .text p{
     margin: 0;
-    font-size: 1rem;
+    font-size: 11px;
 }
 
 .about-btn {
@@ -58,12 +57,11 @@
     color: white; 
     background-color: transparent; 
     border: 2px solid white; 
-    padding: 11px 70px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+    padding: 5px 20px 8px; 
+    font-size: 12px;
     transition-duration: 0.4s; 
     cursor: pointer; 
+    margin-top: 20px;
 }
 
 .about-btn:hover {
@@ -71,46 +69,37 @@
     color: #007BFF; 
 }
 
-// Media query for Tablet
-// @media screen and (min-width: 768px) {
-
-//     .history-info h2{
-//         color: #fff;
-//         font-size: 36px;
-//         line-height: 42px;
-//         margin: 0 0 23px;
-//         text-transform: uppercase;
-//         font-weight: 700;
-//     }
-//     .history-info .text {
-//         font-size: 17px;
-//         margin: 0;
-//         width: 700px;
-//         display: flex;
-//         margin: auto;
-//         justify-content: center;
-//     }
-
-//   }
 
   // Media query for Mobile 
 @media screen and (min-width: 768px) {
+
+    .history-info .container {
+        padding-top: 155px;
+        padding-bottom: 91px;
+        height: 465px;
+    }
 
     .history-info h2{
         color: #fff;
         font-size: 33px;
         line-height: 36px;
-        margin: 0 0 23px;
+        margin: -58px 0 30px;
         text-transform: uppercase;
         font-weight: 700;
     }
     .history-info .text {
-        font-size: 17px;
-        margin: 0;
-        max-width: 500px;
-        display: flex;
-        margin: auto;
         
+        margin: 0;
+        max-width: 470px;
+        display: flex;
+        padding-bottom: 60px;
+        
+    }
+
+    .history-info .text p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
     }
 
   }
@@ -118,27 +107,50 @@
     // Media query for Desktop
 @media screen and (min-width: 1024px) {
 
+    .history-info .container {
+        padding-top: 155px;
+        padding-bottom: 91px;
+        height:400px
+    }
+
     .history-info h2{
         color: #fff;
     font-size: 49px;
-    line-height: 75px;
-    margin: 0 0 23px;
+    line-height: 40px;
+    margin: -70px 0 0px;
     text-transform: uppercase;
     font-weight: 700;
     max-width: 700px;
-    font-size: 4rem;
+    font-size: 38px;
     }
 
     .history-info .text {
-        font-size: 17px;
         margin: 0;
-        max-width: 600px;
+        max-width: 500px;
         display: flex;
         margin: auto;
         padding-top: 51px;
-        padding-bottom: 65px;
+        padding-bottom: 55px;
     }
+
+    .history-info .text p{
+        margin: 0;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .about-btn {
+        display: inline-block;
+        font-weight: 700;
+        color: white; 
+        background-color: transparent; 
+        border: 2px solid white; 
+        padding: 5px 40px 5px; 
+        font-size: 12px;
+        transition-duration: 0.4s; 
+        cursor: pointer;     }
 
   }
 
+/
 
