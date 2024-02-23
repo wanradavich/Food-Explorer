@@ -38,9 +38,10 @@
   align-items: center;
 }
 
-.machine-img {
+.machine-img,
+#img1 {
   height: auto;
-  max-width: 250px;
+  max-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 20px;
@@ -215,6 +216,23 @@ select {
 
 /* Media query for Tablets */
 @media screen and (min-width: 768px) {
+  #img1 {
+    height: auto;
+    max-width: 175px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+  }
+  #machine-link1 {
+    position: absolute;
+    margin-top: 255px;
+  }
+  .machine-wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .machine-img {
     width: 100%;
   }
@@ -262,6 +280,12 @@ select {
     margin: 0;
     font-weight: bold;
     text-align: center;
+    max-width: 100px;
+  }
+
+  .machine-title-flex {
+    display: flex;
+    justify-content: center;
   }
 
   .machine-title:hover {
@@ -343,12 +367,19 @@ select {
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1024px) {
+  #img1 {
+    max-width: 225px;
+  }
   .machine-link {
     margin-top: 5px;
   }
 
+  #machine-link1 {
+    margin-top: 315px;
+  }
+
   .machine-img {
-    max-width: 100px;
+    max-width: 250px;
     height: auto;
     margin-top: 20px;
   }
@@ -358,7 +389,7 @@ select {
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-    max-width: 150px;
+    max-width: 100px;
   }
 
   .select-row {
@@ -404,6 +435,15 @@ select {
 }
 
 @media screen and (min-width: 1440px) {
+  #img1 {
+    max-width: 230px;
+    padding-bottom: 5px;
+    padding-bottom: 0;
+  }
+
+  #machine-link1 {
+    margin-top: 305px;
+  }
   #advisor-btn {
     max-width: 1360px;
   }
@@ -420,9 +460,22 @@ select {
     text-transform: uppercase;
     margin-bottom: 5px;
   }
+
+  .machine-img {
+    margin: 0px 30px;
+  }
 }
 
 @media (min-width: 1620px) {
+  #img1 {
+    margin-bottom: 5;
+    padding-bottom: 5;
+    max-width: 260px;
+  }
+
+  #machine-link1 {
+    margin-top: 370px;
+  }
   .select-container {
     min-width: 320px;
   }
@@ -432,7 +485,7 @@ select {
   }
 
   #advisor-btn {
-    max-width: 1560px;
+    max-width: 1590px;
   }
 
   .machine-img {
@@ -454,7 +507,11 @@ select {
   .machine-title {
     font-size: 25px;
     text-align: center;
-    max-width: 180px;
+    max-width: 150px;
+  }
+
+  .select-container {
+    padding: 5px;
   }
 
   .select-container select {
@@ -472,5 +529,9 @@ select {
   }
   .machine-link {
     font-size: 14px;
+  }
+  select {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(66, 155, 214, 1)" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>')
+      96% / 5% no-repeat;
   }
 }
