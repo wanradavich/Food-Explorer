@@ -38,7 +38,7 @@
 // Media query for Tablets
 @media screen and (max-width: 768px) {
   .video {
-    padding: 5%;
+    padding: 5% 5%;
   }
   .video-iframe {
     width: 68%;
@@ -50,7 +50,7 @@
 // Media query for Mobile 
 @media screen and (max-width: 425px) {
   .video {
-    padding: 5%;
+    padding: 12% 5%;
   }
   .video-iframe {
     width: 63.5%;
